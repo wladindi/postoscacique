@@ -1,0 +1,22 @@
+node_modules
+.next
+out
+dist
+coverage
+.env
+.env.local
+.env.*.local
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local agent / IDE config
+.claude/
+.idea/
+.vscode/
+.cursor/
+
+# Vercel
+.vercel
