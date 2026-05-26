@@ -225,7 +225,7 @@ export default function HomePage() {
               {[
                 "Posto Cacique",
                 "Cacique Lub",
-                "Tem Conveniencia",
+                "Tem Conveniência",
                 "Cacique Frotas",
                 "Fidelidade"
               ].map((item) => (

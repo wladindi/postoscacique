@@ -9,7 +9,7 @@ import { ButtonLink } from "@/components/ui/button";
 const navItems = [
   { href: "/", label: "Posto Cacique" },
   { href: "/cacique-lub", label: "Cacique Lub" },
-  { href: "/tem-conveniencia", label: "Tem Conveniencia" },
+  { href: "/tem-conveniencia", label: "Tem Conveniência" },
   { href: "/cacique-frotas", label: "Cacique Frotas" },
   { href: "/fidelidade", label: "Fidelidade" },
   { href: "/sobre", label: "Sobre" }
@@ -36,7 +36,7 @@ export function SiteHeader({ activeLabel = "Posto Cacique" }: SiteHeaderProps) {
     <header className="site-header">
       <div className="site-header__inner container">
         <BrandLogo />
-        <nav aria-label="Navegacao principal" className="site-header__nav">
+        <nav aria-label="Navegação principal" className="site-header__nav">
           {navItems.map((item) => (
             <Link
               aria-current={item.label === activeLabel ? "page" : undefined}
@@ -72,7 +72,7 @@ export function SiteHeader({ activeLabel = "Posto Cacique" }: SiteHeaderProps) {
         className={`site-header__drawer ${open ? "is-open" : ""}`}
         id="mobile-nav"
       >
-        <nav aria-label="Navegacao mobile" className="site-header__drawer-nav">
+        <nav aria-label="Navegação mobile" className="site-header__drawer-nav">
           {navItems.map((item) => (
             <Link
               aria-current={item.label === activeLabel ? "page" : undefined}

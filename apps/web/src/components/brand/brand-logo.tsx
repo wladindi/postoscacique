@@ -14,7 +14,7 @@ export function BrandLogo({ href = "/", compact = false }: BrandLogoProps) {
     >
       <span className="brand-logo__script">Rede</span>
       <span className="brand-logo__name">CACIQUE</span>
-      <span className="brand-logo__tagline">COM VOCE EM TODOS OS CAMINHOS</span>
+      <span className="brand-logo__tagline">COM VOCÊ EM TODOS OS CAMINHOS</span>
     </Link>
   );
 }

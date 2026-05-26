@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Rede Cacique",
-  description: "Rede Cacique - com voce em todos os caminhos"
+  description: "Rede Cacique - com você em todos os caminhos"
 };
 
 export default function RootLayout({

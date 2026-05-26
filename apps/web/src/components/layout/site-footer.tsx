@@ -4,7 +4,7 @@ import { BrandLogo } from "@/components/brand/brand-logo";
 const businessLinks = [
   "Posto Cacique",
   "Cacique Lub",
-  "Tem Conveniencia",
+  "Tem Conveniência",
   "Cacique Frotas"
 ];
 
@@ -20,8 +20,8 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-footer__inner container">
         <BrandLogo compact />
-        <FooterColumn title="NEGOCIOS" items={businessLinks} />
-        <FooterColumn title="SERVICOS" items={serviceLinks} />
+        <FooterColumn title="NEGÓCIOS" items={businessLinks} />
+        <FooterColumn title="SERVIÇOS" items={serviceLinks} />
       </div>
       <p className="site-footer__copyright">
         © 2026 Rede Cacique. Todos os direitos reservados. CNPJ

@@ -97,14 +97,14 @@ function TemLogo({
 export default function TemConvenienciaPage() {
   return (
     <>
-      <SiteHeader activeLabel="Tem Conveniencia" />
+      <SiteHeader activeLabel="Tem Conveniência" />
       <main>
         <section className="tem-hero">
           <div className="tem-hero__bg" aria-hidden="true" />
           <div className="tem-hero__overlay" aria-hidden="true" />
           <div className="container tem-hero__inner">
             <div className="tem-hero__content">
-              <p className="tem-hero__kicker">TEM CONVENIENCIA</p>
+              <p className="tem-hero__kicker">TEM CONVENIÊNCIA</p>
               <h1 className="tem-hero__title">
                 Tudo o que você precisa,
                 <br />
