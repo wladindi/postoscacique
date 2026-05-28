@@ -124,16 +124,6 @@ export default function TemConvenienciaPage() {
                 conforto e rapidez.
               </p>
             </div>
-            <div className="tem-hero__art">
-              <Image
-                alt="Tem Conveniência"
-                className="tem-hero__logo"
-                height={474}
-                priority
-                src="/assets/tem-conveniencia/logo-tem-blob.png"
-                width={500}
-              />
-            </div>
           </div>
         </section>
 

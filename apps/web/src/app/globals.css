@@ -1880,8 +1880,8 @@ img {
 
 .tem-hero__bg {
   background:
-    linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
-    url("/assets/tem-conveniencia/hero-posto.png") center/cover no-repeat;
+    linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)),
+    url("/assets/tem-conveniencia/hero-posto.png") 35% 5%/cover no-repeat;
   inset: 0;
   position: absolute;
   z-index: 0;
@@ -1889,8 +1889,8 @@ img {
 
 .tem-hero__overlay {
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 78%) 0%, rgb(0 0 0 / 60%) 45%, rgb(0 0 0 / 35%) 100%),
-    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 25%) 100%);
+    linear-gradient(90deg, rgb(0 0 0 / 82%) 0%, rgb(0 0 0 / 50%) 38%, rgb(0 0 0 / 10%) 65%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 20%) 100%);
   inset: 0;
   position: absolute;
   z-index: 1;
@@ -1900,8 +1900,8 @@ img {
   align-items: center;
   display: grid;
   gap: 40px;
-  grid-template-columns: 1.4fr 1fr;
-  min-height: 440px;
+  grid-template-columns: minmax(0, 720px);
+  min-height: 480px;
   padding: 56px 0 64px;
   position: relative;
   z-index: 2;
