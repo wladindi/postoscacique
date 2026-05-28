@@ -123,54 +123,6 @@ html {
   transform: scale(1.06);
 }
 
-.brand-promo__overlay {
-  background:
-    linear-gradient(135deg, rgb(0 0 0 / 55%) 0%, rgb(0 0 0 / 25%) 55%, transparent 100%);
-  inset: 0;
-  position: absolute;
-  z-index: 1;
-}
-
-.brand-promo--tem .brand-promo__overlay {
-  background:
-    linear-gradient(135deg, rgb(255 207 28 / 35%) 0%, rgb(0 0 0 / 50%) 55%, rgb(0 0 0 / 70%) 100%);
-}
-
-.brand-promo--fidelidade .brand-promo__overlay {
-  background:
-    linear-gradient(135deg, rgb(255 0 0 / 45%) 0%, rgb(120 0 0 / 60%) 50%, rgb(0 0 0 / 70%) 100%);
-}
-
-.brand-promo--lub .brand-promo__overlay {
-  background:
-    linear-gradient(135deg, rgb(0 0 0 / 70%) 0%, rgb(54 151 4 / 28%) 60%, rgb(0 0 0 / 50%) 100%);
-}
-
-.brand-promo__content {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  padding: 28px 28px 24px;
-  position: relative;
-  z-index: 2;
-}
-
-.brand-promo__title {
-  color: var(--cacique-white);
-  font-family: var(--font-display);
-  font-size: clamp(22px, 2.3vw, 30px);
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  line-height: 1.05;
-  margin: 0;
-  text-shadow: 0 2px 12px rgb(0 0 0 / 50%);
-}
-
-.brand-promo__title span {
-  font-weight: 800;
-}
 
 /* Mobile carousel */
 .brand-promos__carousel {

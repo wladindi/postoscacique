@@ -104,70 +104,45 @@ export default function HomePage() {
             <Reveal variant="up">
               <BrandPromosCarousel>
                 <Link
+                  aria-label="Tem Conveniência"
                   className="brand-promo brand-promo--tem"
                   href="/tem-conveniencia"
                 >
                   <Image
-                    alt="Lojas Tem Conveniência"
+                    alt="Lojas Tem Conveniência 24h"
                     className="brand-promo__bg"
                     fill
                     sizes="(max-width: 980px) 100vw, 33vw"
-                    src="/assets/home/gallery-tem-interior.png"
+                    src="/assets/home/card-tem.png"
                   />
-                  <div className="brand-promo__overlay" />
-                  <div className="brand-promo__content">
-                    <h3 className="brand-promo__title">
-                      Lojas de
-                      <br />
-                      Conveniência
-                      <br />
-                      <span>24h</span>
-                    </h3>
-                  </div>
                 </Link>
 
                 <Link
+                  aria-label="Cacique Fidelidade"
                   className="brand-promo brand-promo--fidelidade"
                   href="/fidelidade"
                 >
                   <Image
-                    alt="Cacique Fidelidade"
+                    alt="Cacique Fidelidade — pontos que te levam mais longe"
                     className="brand-promo__bg"
                     fill
                     sizes="(max-width: 980px) 100vw, 33vw"
                     src="/assets/home/card-fidelidade.png"
                   />
-                  <div className="brand-promo__overlay" />
-                  <div className="brand-promo__content">
-                    <h3 className="brand-promo__title">
-                      Seja
-                      <br />
-                      Cacique
-                      <br />
-                      <span>Fidelidade</span>
-                    </h3>
-                  </div>
                 </Link>
 
                 <Link
+                  aria-label="Cacique Lubrificantes"
                   className="brand-promo brand-promo--lub"
                   href="/cacique-lub"
                 >
                   <Image
-                    alt="Cacique Lubrificantes"
+                    alt="Cacique Lub — o melhor desempenho para o seu motor"
                     className="brand-promo__bg"
                     fill
                     sizes="(max-width: 980px) 100vw, 33vw"
-                    src="/assets/cacique-lub/hero-bg.webp"
+                    src="/assets/home/card-lub.png"
                   />
-                  <div className="brand-promo__overlay" />
-                  <div className="brand-promo__content">
-                    <h3 className="brand-promo__title">
-                      Cacique
-                      <br />
-                      <span>Lubrificantes</span>
-                    </h3>
-                  </div>
                 </Link>
               </BrandPromosCarousel>
             </Reveal>
