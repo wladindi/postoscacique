@@ -135,7 +135,7 @@ export default function HomePage() {
                     className="brand-promo__bg"
                     fill
                     sizes="(max-width: 980px) 100vw, 33vw"
-                    src="/assets/fidelidade/app-mockup.webp"
+                    src="/assets/home/card-fidelidade.png"
                   />
                   <div className="brand-promo__overlay" />
                   <div className="brand-promo__content">
