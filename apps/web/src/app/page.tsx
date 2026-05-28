@@ -58,7 +58,8 @@ export default function HomePage() {
             className="home-hero__img"
             fill
             priority
-            sizes="100vw"
+            quality={95}
+            sizes="(max-width: 640px) 200vw, (max-width: 980px) 150vw, 1920px"
             src="/assets/home/gallery-team.png"
           />
           <div className="home-hero__overlay" aria-hidden="true" />
