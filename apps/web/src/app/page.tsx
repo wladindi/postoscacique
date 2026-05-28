@@ -59,7 +59,7 @@ export default function HomePage() {
             fill
             priority
             quality={95}
-            sizes="(max-width: 640px) 200vw, (max-width: 980px) 150vw, 1920px"
+            sizes="(max-width: 640px) 320vw, (max-width: 980px) 180vw, 1920px"
             src="/assets/home/gallery-team.png"
           />
           <div className="home-hero__overlay" aria-hidden="true" />
