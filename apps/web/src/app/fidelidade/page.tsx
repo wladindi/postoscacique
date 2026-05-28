@@ -88,7 +88,7 @@ export default function FidelidadePage() {
                 className="fid-hero__mockup-img"
                 height={580}
                 priority
-                src="/assets/fidelidade/app-mockup.webp"
+                src="/assets/fidelidade/app-mockup.png"
                 width={780}
               />
             </Reveal>
