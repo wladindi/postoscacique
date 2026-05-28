@@ -123,12 +123,6 @@ export default function HomePage() {
                       <br />
                       <span>24h</span>
                     </h3>
-                    <span
-                      aria-hidden="true"
-                      className="brand-promo__badge brand-promo__badge--tem"
-                    >
-                      tem
-                    </span>
                   </div>
                 </Link>
 
@@ -152,12 +146,6 @@ export default function HomePage() {
                       <br />
                       <span>Fidelidade</span>
                     </h3>
-                    <span
-                      aria-hidden="true"
-                      className="brand-promo__badge brand-promo__badge--fidelidade"
-                    >
-                      C
-                    </span>
                   </div>
                 </Link>
 
@@ -179,12 +167,6 @@ export default function HomePage() {
                       <br />
                       <span>Lubrificantes</span>
                     </h3>
-                    <span
-                      aria-hidden="true"
-                      className="brand-promo__badge brand-promo__badge--lub"
-                    >
-                      CL
-                    </span>
                   </div>
                 </Link>
               </BrandPromosCarousel>
