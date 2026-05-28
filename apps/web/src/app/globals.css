@@ -1873,21 +1873,24 @@ img {
 /* ── Tem Conveniência (Figma spec) ── */
 
 .tem-hero {
-  background: var(--cacique-white);
+  background: #000;
   overflow: hidden;
   position: relative;
 }
 
 .tem-hero__bg {
   background:
-    url("/assets/tem-conveniencia/hero-posto.webp") center/cover no-repeat;
+    linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
+    url("/assets/tem-conveniencia/hero-posto.png") center/cover no-repeat;
   inset: 0;
   position: absolute;
   z-index: 0;
 }
 
 .tem-hero__overlay {
-  background: rgb(255 255 255 / 78%);
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 78%) 0%, rgb(0 0 0 / 60%) 45%, rgb(0 0 0 / 35%) 100%),
+    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 25%) 100%);
   inset: 0;
   position: absolute;
   z-index: 1;
@@ -1905,7 +1908,7 @@ img {
 }
 
 .tem-hero__kicker {
-  color: #000;
+  color: var(--cacique-red);
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
@@ -1916,7 +1919,7 @@ img {
 }
 
 .tem-hero__title {
-  color: #000;
+  color: var(--cacique-white);
   font-family: var(--font-display);
   font-size: clamp(32px, 3.6vw, 48px);
   font-weight: 700;
@@ -1925,17 +1928,21 @@ img {
   margin: 0 0 22px;
 }
 
+.tem-hero__title span {
+  color: var(--cacique-red);
+}
+
 .tem-hero__desc {
-  color: #000;
+  color: var(--cacique-white);
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.35;
-  margin: 0 0 18px;
+  line-height: 1.4;
+  margin: 0 0 16px;
 }
 
 .tem-hero__desc + .tem-hero__desc {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 

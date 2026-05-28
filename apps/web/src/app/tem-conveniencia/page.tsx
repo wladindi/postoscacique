@@ -108,7 +108,7 @@ export default function TemConvenienciaPage() {
               <h1 className="tem-hero__title">
                 Tudo o que você precisa,
                 <br />
-                em um só lugar
+                <span>em um só lugar</span>
               </h1>
               <p className="tem-hero__desc">
                 A versão mais completa da Tem Conveniência reúne variedade,
