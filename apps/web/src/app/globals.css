@@ -1085,25 +1085,40 @@ img {
 }
 
 .home-hero {
-  background:
-    linear-gradient(
-      180deg,
-      rgb(0 0 0 / 25%) 0%,
-      rgb(0 0 0 / 35%) 60%,
-      rgb(0 0 0 / 60%) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgb(0 0 0 / 65%) 0%,
-      rgb(0 0 0 / 40%) 35%,
-      rgb(0 0 0 / 15%) 65%,
-      transparent 100%
-    ),
-    url("/assets/home/gallery-team.png") center 30%/cover no-repeat,
-    var(--cacique-black);
+  background: var(--cacique-black);
+  isolation: isolate;
   min-height: 560px;
+  overflow: hidden;
   padding: 56px 0 64px;
   position: relative;
+}
+
+.home-hero__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+  width: 100%;
+  z-index: 0;
+}
+
+.home-hero__overlay {
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, rgb(0 0 0 / 30%) 60%, rgb(0 0 0 / 55%) 100%),
+    linear-gradient(
+      90deg,
+      rgb(0 0 0 / 75%) 0%,
+      rgb(0 0 0 / 50%) 35%,
+      rgb(0 0 0 / 18%) 65%,
+      transparent 100%
+    );
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.home-hero__content {
+  position: relative;
+  z-index: 2;
 }
 
 .home-hero h1,
@@ -2907,6 +2922,14 @@ img {
     padding: 14px 0;
   }
 
+  .home-hero {
+    min-height: 540px;
+  }
+
+  .home-hero__img {
+    object-position: 68% center;
+  }
+
   .site-header__nav,
   .site-header__cta {
     display: none;
@@ -3089,10 +3112,23 @@ img {
 
   /* Home hero */
   .home-hero {
-    background-position: center;
-    background-size: cover;
-    min-height: 460px;
+    min-height: 520px;
     padding: 40px 0 50px;
+  }
+
+  .home-hero__img {
+    object-position: 72% center;
+  }
+
+  .home-hero__overlay {
+    background:
+      linear-gradient(180deg, rgb(0 0 0 / 25%) 0%, rgb(0 0 0 / 45%) 55%, rgb(0 0 0 / 70%) 100%),
+      linear-gradient(
+        90deg,
+        rgb(0 0 0 / 65%) 0%,
+        rgb(0 0 0 / 45%) 55%,
+        rgb(0 0 0 / 30%) 100%
+      );
   }
 
   .home-hero h1 {

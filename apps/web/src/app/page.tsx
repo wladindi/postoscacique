@@ -52,8 +52,17 @@ export default function HomePage() {
     <>
       <SiteHeader />
       <main>
-        <Section className="home-hero" tone="dark">
-          <div className="home-hero__content">
+        <section className="home-hero">
+          <Image
+            alt="Frentista Cacique no posto"
+            className="home-hero__img"
+            fill
+            priority
+            sizes="100vw"
+            src="/assets/home/gallery-team.png"
+          />
+          <div className="home-hero__overlay" aria-hidden="true" />
+          <div className="container home-hero__content">
             <p className="home-hero__badge">△ DESDE 1970 NO NORDESTE</p>
             <h1>
               Somos referência em abastecimento{" "}
@@ -87,7 +96,7 @@ export default function HomePage() {
               </strong>
             </div>
           </div>
-        </Section>
+        </section>
 
         <section className="brand-promos">
           <div className="container">
