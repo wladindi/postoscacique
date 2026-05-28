@@ -3202,6 +3202,10 @@ img {
   .carousel__nav--prev { left: 10px; }
   .carousel__nav--next { right: 10px; }
 
+  .network-section article {
+    text-align: center;
+  }
+
   .network-section article h2 {
     font-size: 26px;
     margin-bottom: 16px;
@@ -3209,6 +3213,9 @@ img {
 
   .network-section article p {
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
   }
 
   .fleet-section {
