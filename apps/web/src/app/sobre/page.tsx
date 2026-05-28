@@ -1,83 +1,101 @@
-import { Award, Building2, MapPin, Users } from "lucide-react";
+import {
+  BadgeCheck,
+  CreditCard,
+  Droplet,
+  Fuel,
+  Handshake,
+  Layers,
+  MapPin,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+  Target,
+  Truck,
+  Wrench
+} from "lucide-react";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { AssetSlot, Reveal } from "@/components/ui";
+import { Reveal } from "@/components/ui";
 
-const milestones = [
+const solutions = [
   {
-    year: "1970",
-    title: "O começo",
+    icon: Fuel,
+    title: "Postos de Combustível",
     description:
-      "A Rede Cacique nasce no Nordeste com o primeiro posto de combustíveis, dando o primeiro passo de uma jornada que dura quase 6 décadas."
+      "60 filiais garantindo abastecimento com qualidade testada antes da venda e presença estratégica nas principais rotas do Piauí, Maranhão e Pernambuco."
   },
   {
-    year: "1998",
+    icon: ShoppingBag,
+    title: "Conveniência",
+    description:
+      "Lojas completas para tornar cada parada mais prática, rápida e eficiente."
+  },
+  {
+    icon: Truck,
+    title: "Soluções para Frotas",
+    description:
+      "Mais controle, eficiência e gestão inteligente para empresas e operações B2B."
+  },
+  {
+    icon: Droplet,
+    title: "Abastecimento em Escala (TRR)",
+    description:
+      "Soluções confiáveis para grandes operações, com foco no agronegócio e logística."
+  },
+  {
+    icon: Wrench,
     title: "Cacique Lubrificantes",
     description:
-      "Inauguração da divisão de lubrificantes, atendendo o mercado automotivo e diesel com filiais no Piauí e Maranhão."
+      "Linha completa para desempenho e proteção de veículos e equipamentos industriais."
   },
   {
-    year: "Hoje",
-    title: "Rede consolidada",
+    icon: BadgeCheck,
+    title: "Cacique Fidelidade",
     description:
-      "Mais de 60 postos, 16 lojas Tem Conveniência, 26 unidades de autoatendimento e 2 distribuidoras em 4 estados."
+      "Benefícios reais que transformam cada abastecimento em vantagem."
+  },
+  {
+    icon: CreditCard,
+    title: "Rota Pay",
+    description:
+      "Banco digital que facilita recebimento de troco de carta frete, pagamentos e dá mais controle financeiro."
   }
 ];
 
-const numbers = [
-  { value: "60+", label: "Postos na rede" },
-  { value: "55+", label: "Anos de história" },
-  { value: "4", label: "Estados atendidos" },
-  { value: "16", label: "Lojas de conveniência" }
+const states = [
+  "Piauí",
+  "Maranhão",
+  "Pernambuco",
+  "Bahia",
+  "Tocantins",
+  "Pará"
 ];
 
-const values = [
+const pillars = [
   {
-    icon: Award,
-    title: "Qualidade",
-    description:
-      "Combustível testado e procedência garantida em cada carga que chega à rede."
+    icon: ShieldCheck,
+    title: "Qualidade rigorosa",
+    description: "Em todos os produtos, do combustível ao lubrificante."
   },
   {
-    icon: Users,
-    title: "Atendimento humano",
-    description:
-      "Equipes treinadas e parcerias duradouras com motoristas, frotistas e clientes locais."
-  },
-  {
-    icon: Building2,
-    title: "Estrutura completa",
-    description:
-      "Postos, conveniência, lubrificantes e soluções B2B em um único grupo."
+    icon: Handshake,
+    title: "Confiança construída",
+    description: "Ao longo de décadas, com clientes, parceiros e equipes."
   },
   {
     icon: MapPin,
     title: "Presença regional",
-    description:
-      "Estamos nas principais rotas do Norte e Nordeste, conectando caminhos da MATOPIBA ao litoral."
-  }
-];
-
-const operations = [
-  {
-    name: "Posto Cacique",
-    description: "Mais de 60 unidades estrategicamente distribuídas."
+    description: "Nas principais rotas do Norte e Nordeste do país."
   },
   {
-    name: "Cacique Lub",
-    description: "Distribuidora oficial de lubrificantes e peças, desde 1998."
+    icon: Layers,
+    title: "Soluções completas",
+    description: "Para pessoas, empresas e operações de qualquer porte."
   },
   {
-    name: "Tem Conveniência",
-    description: "Lojas próprias, autoatendimento e Tem Beer espalhadas pela rede."
-  },
-  {
-    name: "Cacique Frotas",
-    description: "Soluções B2B de abastecimento, gestão e pagamento para empresas."
-  },
-  {
-    name: "Cacique Fidelidade",
-    description: "Programa de pontos com mais de 100 itens de desconto exclusivo."
+    icon: Target,
+    title: "Compromisso com resultado",
+    description: "Foco em eficiência operacional e crescimento sustentável."
   }
 ];
 
@@ -90,93 +108,142 @@ export default function SobrePage() {
           <div className="about-hero__bg" aria-hidden="true" />
           <div className="about-hero__overlay" aria-hidden="true" />
           <div className="container about-hero__inner">
-            <p className="about-hero__kicker">SOBRE A REDE CACIQUE</p>
+            <p className="about-hero__kicker">REDE CACIQUE</p>
             <h1 className="about-hero__title">
-              Há quase 6 décadas
+              Quase 60 anos movendo
               <br />
-              movendo o Nordeste
+              pessoas, empresas e o
+              <br />
+              <span>desenvolvimento</span> do Brasil
             </h1>
             <p className="about-hero__desc">
-              Uma rede construída no chão da estrada, com gente daqui, atendendo
-              quem vive em movimento. Da nossa primeira bomba em 1970 ao grupo
-              integrado de hoje, mantemos o mesmo compromisso: combustível
-              testado, atendimento humano e estrutura completa para cada
-              jornada.
+              Um ecossistema completo que integra abastecimento, conveniência,
+              distribuição e soluções para pessoas e empresas, com qualidade,
+              confiança e presença nas principais rotas do Norte e Nordeste do
+              Brasil.
             </p>
+            <a className="about-hero__cta" href="#solucoes">
+              Conheça nossas soluções
+            </a>
           </div>
         </section>
 
-        <section className="about-numbers">
+        <section className="about-who">
           <div className="container">
-            <div className="about-numbers__grid">
-              {numbers.map((item, idx) => (
-                <Reveal delay={idx * 90} key={item.label} variant="up">
-                  <div className="about-number">
-                    <strong>{item.value}</strong>
-                    <span>{item.label}</span>
-                  </div>
-                </Reveal>
-              ))}
+            <Reveal variant="up">
+              <p className="section-kicker about-who__kicker">QUEM SOMOS</p>
+              <h2 className="about-who__title">
+                Muito além de
+                <br />
+                postos de combustível
+              </h2>
+              <div className="about-who__copy">
+                <p>
+                  Há quase seis décadas, a Rede Cacique constrói uma trajetória
+                  sólida baseada em confiança, qualidade e compromisso com quem
+                  está em movimento.
+                </p>
+                <p>
+                  Evoluímos para nos tornar um grupo completo, que conecta
+                  diferentes soluções para facilitar a jornada de pessoas e
+                  empresas — da estrada à gestão.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="about-solutions" id="solucoes">
+          <div className="container">
+            <Reveal variant="up">
+              <p className="section-kicker about-solutions__kicker">
+                NOSSAS SOLUÇÕES
+              </p>
+              <h2 className="about-solutions__title">
+                Um ecossistema completo para
+                <br />
+                quem precisa ir além do básico
+              </h2>
+            </Reveal>
+            <div className="about-solutions__grid">
+              {solutions.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <Reveal delay={idx * 70} key={item.title} variant="up">
+                    <article className="about-solution">
+                      <span className="about-solution__icon">
+                        <Icon aria-hidden="true" size={26} strokeWidth={2.2} />
+                      </span>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                    </article>
+                  </Reveal>
+                );
+              })}
+            </div>
+            <Reveal variant="up">
+              <p className="about-solutions__footer">
+                Tudo o que você precisa, em um só lugar.
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="about-presence">
+          <div className="container">
+            <Reveal variant="up">
+              <p className="section-kicker about-presence__kicker">
+                PRESENÇA REGIONAL
+              </p>
+              <h2 className="about-presence__title">
+                Onde o Brasil
+                <br />
+                se movimenta
+              </h2>
+              <p className="about-presence__desc">
+                A Rede Cacique está presente em pontos estratégicos que
+                impulsionam o transporte, o comércio e o desenvolvimento
+                regional.
+              </p>
+            </Reveal>
+            <div className="about-presence__panel">
+              <Reveal className="about-presence__stat" variant="left">
+                <Sparkles aria-hidden="true" size={24} strokeWidth={2.4} />
+                <strong>6 estados</strong>
+                <span>atendidos</span>
+              </Reveal>
+              <Reveal className="about-presence__list" delay={120} variant="right">
+                {states.map((state) => (
+                  <span className="about-presence__chip" key={state}>
+                    <MapPin aria-hidden="true" size={14} strokeWidth={2.4} />
+                    {state}
+                  </span>
+                ))}
+              </Reveal>
             </div>
           </div>
         </section>
 
-        <section className="about-story">
-          <div className="container about-story__inner">
-            <Reveal className="about-story__media" variant="left">
-              <AssetSlot
-                label="Foto histórica Rede Cacique"
-                ratio="portrait"
-              />
-            </Reveal>
-            <Reveal className="about-story__content" delay={120} variant="right">
-              <p className="section-kicker">NOSSA HISTÓRIA</p>
-              <h2 className="about-story__title">
-                Uma história escrita
-                <br />
-                quilômetro a quilômetro
-              </h2>
-              <p className="about-story__lead">
-                A trajetória da Rede Cacique se confunde com o desenvolvimento
-                do transporte e do agronegócio no Norte e Nordeste. Crescemos
-                junto com quem move o país.
-              </p>
-              <ol className="about-timeline">
-                {milestones.map((item) => (
-                  <li className="about-timeline__item" key={item.year}>
-                    <div className="about-timeline__marker">{item.year}</div>
-                    <div>
-                      <h3>{item.title}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="about-values">
+        <section className="about-differential">
           <div className="container">
-            <p className="section-kicker about-values__kicker">
-              O QUE NOS MOVE
-            </p>
-            <h2 className="about-values__title">
-              Valores que sustentam
-              <br />a rede
-            </h2>
-            <div className="about-values__grid">
-              {values.map((item, idx) => {
+            <Reveal variant="up">
+              <p className="section-kicker about-differential__kicker">
+                NOSSO DIFERENCIAL
+              </p>
+              <h2 className="about-differential__title">
+                O que nos move
+                <br />
+                há quase 60 anos
+              </h2>
+            </Reveal>
+            <div className="about-differential__grid">
+              {pillars.map((item, idx) => {
                 const Icon = item.icon;
                 return (
-                  <Reveal delay={idx * 90} key={item.title} variant="up">
-                    <article className="about-value">
-                      <span className="about-value__icon">
-                        <Icon
-                          aria-hidden="true"
-                          size={28}
-                          strokeWidth={2.2}
-                        />
+                  <Reveal delay={idx * 80} key={item.title} variant="up">
+                    <article className="about-pillar">
+                      <span className="about-pillar__icon">
+                        <Icon aria-hidden="true" size={26} strokeWidth={2.2} />
                       </span>
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
@@ -188,52 +255,28 @@ export default function SobrePage() {
           </div>
         </section>
 
-        <section className="about-operations">
+        <section className="about-closing">
           <div className="container">
-            <p className="section-kicker about-operations__kicker">
-              ESTRUTURA INTEGRADA
-            </p>
-            <h2 className="about-operations__title">
-              Tudo conectado em
-              <br />
-              uma única rede
-            </h2>
-            <div className="about-operations__grid">
-              {operations.map((item, idx) => (
-                <Reveal delay={idx * 70} key={item.name} variant="up">
-                  <article className="about-operation">
-                    <h3>{item.name}</h3>
-                    <p>{item.description}</p>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="about-cta">
-          <div className="container">
-            <h2 className="about-cta__title">
-              Quer fazer parte
-              <br />
-              da Rede Cacique?
-            </h2>
-            <p className="about-cta__desc">
-              Trabalhe conosco, seja um franqueado ou converse com a área
-              comercial. Estamos sempre prontos para conectar quem move o
-              Nordeste.
-            </p>
-            <div className="about-cta__actions">
-              <a className="about-cta__btn about-cta__btn--primary" href="/contato">
-                Fale com a gente
-              </a>
-              <a
-                className="about-cta__btn about-cta__btn--ghost"
-                href="/postos-cacique"
-              >
-                Conheça nossos postos
-              </a>
-            </div>
+            <Reveal variant="up">
+              <p className="about-closing__lead">
+                Seguimos avançando com o mesmo propósito que nos trouxe até aqui:
+              </p>
+              <h2 className="about-closing__title">
+                Conectar caminhos,
+                <br />
+                gerar valor e crescer junto com
+                <br />
+                <span>quem move o Brasil.</span>
+              </h2>
+              <div className="about-closing__actions">
+                <a className="about-closing__btn about-closing__btn--primary" href="/contato">
+                  Fale com a gente
+                </a>
+                <a className="about-closing__btn about-closing__btn--ghost" href="/postos-cacique">
+                  Conheça nossos postos
+                </a>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>
