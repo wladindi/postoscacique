@@ -15,7 +15,7 @@ export default function CaciqueLubPage() {
             <Reveal className="lub-hero__content" variant="left">
               <p className="lub-hero__kicker">CACIQUE LUB</p>
               <h1 className="lub-hero__title">
-                Tudo o que você precisa, em um só lugar
+                Tudo o que você precisa, <span>em um só lugar</span>
               </h1>
               <p className="lub-hero__desc">
                 Cacique Lubrificantes é distribuidora oficial da Rede Cacique e

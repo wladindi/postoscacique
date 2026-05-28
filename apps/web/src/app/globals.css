@@ -1718,15 +1718,17 @@ img {
 
 .lub-hero__bg {
   background:
-    linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)),
-    url("/assets/cacique-lub/hero-bg.webp") center/cover no-repeat;
+    linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
+    url("/assets/cacique-lub/hero-bg.jpeg") center/cover no-repeat;
   inset: 0;
   position: absolute;
   z-index: 0;
 }
 
 .lub-hero__overlay {
-  background: linear-gradient(90deg, rgb(0 0 0 / 55%) 30%, transparent 100%);
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 78%) 0%, rgb(0 0 0 / 60%) 45%, rgb(0 0 0 / 35%) 100%),
+    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 25%) 100%);
   inset: 0;
   position: absolute;
   z-index: 1;
@@ -1744,7 +1746,7 @@ img {
 }
 
 .lub-hero__kicker {
-  color: #369704;
+  color: var(--cacique-red);
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 700;
@@ -1755,7 +1757,7 @@ img {
 }
 
 .lub-hero__title {
-  color: #4f9843;
+  color: var(--cacique-white);
   font-family: var(--font-display);
   font-size: clamp(30px, 3.4vw, 44px);
   font-weight: 700;
@@ -1763,6 +1765,10 @@ img {
   line-height: 1.15;
   margin: 0 0 26px;
   max-width: 620px;
+}
+
+.lub-hero__title span {
+  color: var(--cacique-red);
 }
 
 .lub-hero__desc {
