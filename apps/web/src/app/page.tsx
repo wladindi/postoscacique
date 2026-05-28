@@ -71,9 +71,6 @@ export default function HomePage() {
             </h1>
             <div className="home-hero__actions">
               <ButtonLink href="/postos-cacique">NOSSOS POSTOS →</ButtonLink>
-              <ButtonLink href="#frotas" variant="dark">
-                SEJA UM FRANQUEADO →
-              </ButtonLink>
             </div>
             <p className="home-hero__lead">
               Mais de 60 postos nas principais rotas do Nordeste, com
