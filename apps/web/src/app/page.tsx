@@ -11,34 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import {
-  ButtonLink,
-  Card,
-  Carousel,
-  Reveal,
-  Section,
-  type CarouselItem
-} from "@/components/ui";
+import { ButtonLink, Card, Reveal, Section } from "@/components/ui";
 import { FleetContactForm } from "@/features/contact/fleet-contact-form";
-
-const carouselItems: CarouselItem[] = [
-  {
-    src: "/assets/home/gallery-frentistas.png",
-    alt: "Frentistas Cacique lavando para-brisa"
-  },
-  {
-    src: "/assets/home/gallery-car.png",
-    alt: "Carro abastecendo no Posto Cacique"
-  },
-  {
-    src: "/assets/home/gallery-tem-interior.png",
-    alt: "Interior Tem Conveniência com clientes"
-  },
-  {
-    src: "/assets/home/gallery-mecanica.png",
-    alt: "Atendente verificando o óleo do motor"
-  }
-];
 
 const fleetBenefits = [
   {
@@ -107,56 +81,6 @@ export default function HomePage() {
               </strong>
             </div>
           </div>
-        </Section>
-
-        <Section className="network-section" tone="white">
-          <div className="network-section__brand network-section__brand--left">
-            <span>Rede</span>
-            CACIQUE
-          </div>
-          <div className="network-section__brand network-section__brand--right">
-            <span>Rede</span>
-            CACIQUE
-          </div>
-          <div className="network-section__grid">
-            <Reveal variant="left">
-              <div className="network-section__hero">
-                <Image
-                  alt="Foto aérea Posto Cacique"
-                  height={397}
-                  sizes="(max-width: 980px) 100vw, 600px"
-                  src="/assets/home/posto-aereo.webp"
-                  width={600}
-                />
-              </div>
-            </Reveal>
-            <Reveal variant="right" delay={120}>
-              <article>
-                <h2>REDE CACIQUE</h2>
-                <p>
-                  Há quase 6 décadas, impulsionando quem move o Nordeste com
-                  qualidade, confiança e eficiência.
-                </p>
-                <p>
-                  Com mais de 60 postos estrategicamente distribuídos, a Rede
-                  Cacique conta com uma estrutura completa que inclui 16 lojas
-                  de conveniência, 26 unidades de autoatendimento e 2
-                  distribuidoras de lubrificantes e produtos automotivos,
-                  garantindo capilaridade, agilidade e soluções integradas para
-                  pessoas, empresas e frotas.
-                </p>
-                <p>
-                  Presente nas principais rotas do Norte e Nordeste, atuamos
-                  diretamente no suporte ao transporte e ao escoamento da
-                  produção agrícola na MATOPIBA, conectando caminhos,
-                  impulsionando negócios e garantindo resultados.
-                </p>
-              </article>
-            </Reveal>
-          </div>
-          <Reveal variant="up" className="network-section__carousel">
-            <Carousel ariaLabel="Galeria Rede Cacique" items={carouselItems} />
-          </Reveal>
         </Section>
 
         <section className="brand-promos">
@@ -251,6 +175,53 @@ export default function HomePage() {
             </Reveal>
           </div>
         </section>
+
+        <Section className="network-section" tone="white">
+          <div className="network-section__brand network-section__brand--left">
+            <span>Rede</span>
+            CACIQUE
+          </div>
+          <div className="network-section__brand network-section__brand--right">
+            <span>Rede</span>
+            CACIQUE
+          </div>
+          <div className="network-section__grid">
+            <Reveal variant="left">
+              <div className="network-section__hero">
+                <Image
+                  alt="Foto aérea Posto Cacique"
+                  height={397}
+                  sizes="(max-width: 980px) 100vw, 600px"
+                  src="/assets/home/posto-aereo.webp"
+                  width={600}
+                />
+              </div>
+            </Reveal>
+            <Reveal variant="right" delay={120}>
+              <article>
+                <h2>REDE CACIQUE</h2>
+                <p>
+                  Há quase 6 décadas, impulsionando quem move o Nordeste com
+                  qualidade, confiança e eficiência.
+                </p>
+                <p>
+                  Com mais de 60 postos estrategicamente distribuídos, a Rede
+                  Cacique conta com uma estrutura completa que inclui 16 lojas
+                  de conveniência, 26 unidades de autoatendimento e 2
+                  distribuidoras de lubrificantes e produtos automotivos,
+                  garantindo capilaridade, agilidade e soluções integradas para
+                  pessoas, empresas e frotas.
+                </p>
+                <p>
+                  Presente nas principais rotas do Norte e Nordeste, atuamos
+                  diretamente no suporte ao transporte e ao escoamento da
+                  produção agrícola na MATOPIBA, conectando caminhos,
+                  impulsionando negócios e garantindo resultados.
+                </p>
+              </article>
+            </Reveal>
+          </div>
+        </Section>
 
         <section className="fleet-section" id="frotas">
           <div className="fleet-section__overlay">
