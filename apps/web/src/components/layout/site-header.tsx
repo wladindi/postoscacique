@@ -23,6 +23,16 @@ const navItems = [
   { href: "/sobre", label: "Sobre" }
 ];
 
+// Drawer mobile: inclui "Nossos Postos" depois de Posto Cacique.
+const drawerNavItems = [
+  { href: "/", label: "Posto Cacique" },
+  { href: "/postos-cacique", label: "Nossos Postos" },
+  { href: "/cacique-lub", label: "Cacique Lub" },
+  { href: "/tem-conveniencia", label: "Tem Conveniência" },
+  { href: "/fidelidade", label: "Fidelidade" },
+  { href: "/sobre", label: "Sobre" }
+];
+
 type SiteHeaderProps = {
   activeLabel?: string;
 };
@@ -108,7 +118,7 @@ export function SiteHeader({ activeLabel = "Posto Cacique" }: SiteHeaderProps) {
         id="mobile-nav"
       >
         <nav aria-label="Navegação mobile" className="site-header__drawer-nav">
-          {navItems.map((item) => (
+          {drawerNavItems.map((item) => (
             <Link
               aria-current={item.label === activeLabel ? "page" : undefined}
               className="site-header__drawer-link"
