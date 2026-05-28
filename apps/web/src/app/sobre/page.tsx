@@ -102,7 +102,7 @@ const pillars = [
 export default function SobrePage() {
   return (
     <>
-      <SiteHeader activeLabel="Sobre" />
+      <SiteHeader activeLabel="Sobre nós" />
       <main>
         <section className="about-hero">
           <div className="about-hero__bg" aria-hidden="true" />

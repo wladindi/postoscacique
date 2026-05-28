@@ -21,7 +21,7 @@ const navItems = [
   { href: "/tem-conveniencia", label: "Tem Conveniência" },
   { href: "/fidelidade", label: "Fidelidade" },
   { href: "/postos-cacique", label: "Nossos Postos" },
-  { href: "/sobre", label: "Sobre" }
+  { href: "/sobre", label: "Sobre nós" }
 ];
 
 // Drawer mobile: inclui "Nossos Postos" depois de Posto Cacique.
@@ -31,7 +31,7 @@ const drawerNavItems = [
   { href: "/cacique-lub", label: "Cacique Lub" },
   { href: "/tem-conveniencia", label: "Tem Conveniência" },
   { href: "/fidelidade", label: "Fidelidade" },
-  { href: "/sobre", label: "Sobre" }
+  { href: "/sobre", label: "Sobre nós" }
 ];
 
 type SiteHeaderProps = {
