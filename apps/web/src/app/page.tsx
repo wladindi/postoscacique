@@ -8,6 +8,7 @@ import {
   WalletCards
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import {
@@ -157,6 +158,99 @@ export default function HomePage() {
             <Carousel ariaLabel="Galeria Rede Cacique" items={carouselItems} />
           </Reveal>
         </Section>
+
+        <section className="brand-promos">
+          <div className="container">
+            <Reveal variant="up">
+              <div className="brand-promos__grid">
+                <Link
+                  className="brand-promo brand-promo--tem"
+                  href="/tem-conveniencia"
+                >
+                  <Image
+                    alt="Lojas Tem Conveniência"
+                    className="brand-promo__bg"
+                    fill
+                    sizes="(max-width: 980px) 100vw, 33vw"
+                    src="/assets/home/gallery-tem-interior.png"
+                  />
+                  <div className="brand-promo__overlay" />
+                  <div className="brand-promo__content">
+                    <h3 className="brand-promo__title">
+                      Lojas de
+                      <br />
+                      Conveniência
+                      <br />
+                      <span>24h</span>
+                    </h3>
+                    <span
+                      aria-hidden="true"
+                      className="brand-promo__badge brand-promo__badge--tem"
+                    >
+                      tem
+                    </span>
+                  </div>
+                </Link>
+
+                <Link
+                  className="brand-promo brand-promo--fidelidade"
+                  href="/fidelidade"
+                >
+                  <Image
+                    alt="Cacique Fidelidade"
+                    className="brand-promo__bg"
+                    fill
+                    sizes="(max-width: 980px) 100vw, 33vw"
+                    src="/assets/fidelidade/app-mockup.webp"
+                  />
+                  <div className="brand-promo__overlay" />
+                  <div className="brand-promo__content">
+                    <h3 className="brand-promo__title">
+                      Seja
+                      <br />
+                      Cacique
+                      <br />
+                      <span>Fidelidade</span>
+                    </h3>
+                    <span
+                      aria-hidden="true"
+                      className="brand-promo__badge brand-promo__badge--fidelidade"
+                    >
+                      C
+                    </span>
+                  </div>
+                </Link>
+
+                <Link
+                  className="brand-promo brand-promo--lub"
+                  href="/cacique-lub"
+                >
+                  <Image
+                    alt="Cacique Lubrificantes"
+                    className="brand-promo__bg"
+                    fill
+                    sizes="(max-width: 980px) 100vw, 33vw"
+                    src="/assets/cacique-lub/hero-bg.webp"
+                  />
+                  <div className="brand-promo__overlay" />
+                  <div className="brand-promo__content">
+                    <h3 className="brand-promo__title">
+                      Cacique
+                      <br />
+                      <span>Lubrificantes</span>
+                    </h3>
+                    <span
+                      aria-hidden="true"
+                      className="brand-promo__badge brand-promo__badge--lub"
+                    >
+                      CL
+                    </span>
+                  </div>
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>
 
         <section className="fleet-section" id="frotas">
           <div className="fleet-section__overlay">
