@@ -19,15 +19,9 @@ const navItems = [
   { href: "/", label: "Posto Cacique" },
   { href: "/cacique-lub", label: "Cacique Lub" },
   { href: "/tem-conveniencia", label: "Tem Conveniência" },
-  { href: "/cacique-frotas", label: "Cacique Frotas" },
   { href: "/fidelidade", label: "Fidelidade" },
   { href: "/sobre", label: "Sobre" }
 ];
-
-// No drawer mobile substituimos o link "Cacique Frotas" pelo botao WhatsApp.
-const drawerNavItems = navItems.filter(
-  (item) => item.label !== "Cacique Frotas"
-);
 
 type SiteHeaderProps = {
   activeLabel?: string;
@@ -77,9 +71,21 @@ export function SiteHeader({ activeLabel = "Posto Cacique" }: SiteHeaderProps) {
             </Link>
           ))}
         </nav>
-        <ButtonLink className="site-header__cta" href="/contato" size="sm">
-          Contato
-        </ButtonLink>
+        <div className="site-header__actions">
+          <a
+            aria-label="Abasteça sua frota pelo WhatsApp"
+            className="site-header__whats"
+            href={WHATSAPP_URL}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <WhatsAppIcon size={18} />
+            Abasteça sua frota
+          </a>
+          <ButtonLink className="site-header__cta" href="/contato" size="sm">
+            Contato
+          </ButtonLink>
+        </div>
         <button
           aria-controls="mobile-nav"
           aria-expanded={open}
@@ -102,7 +108,7 @@ export function SiteHeader({ activeLabel = "Posto Cacique" }: SiteHeaderProps) {
         id="mobile-nav"
       >
         <nav aria-label="Navegação mobile" className="site-header__drawer-nav">
-          {drawerNavItems.map((item) => (
+          {navItems.map((item) => (
             <Link
               aria-current={item.label === activeLabel ? "page" : undefined}
               className="site-header__drawer-link"
