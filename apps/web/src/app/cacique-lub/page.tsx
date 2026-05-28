@@ -26,10 +26,6 @@ export default function CaciqueLubPage() {
                 atuação no Piauí e Maranhão.
               </p>
             </Reveal>
-            <Reveal className="lub-hero__logo" delay={140} variant="right">
-              <span className="lub-hero__logo-brand">CACIQUE</span>
-              <span className="lub-hero__logo-sub">LUBRIFICANTES</span>
-            </Reveal>
           </div>
         </section>
 
