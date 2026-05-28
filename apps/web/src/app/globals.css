@@ -1718,7 +1718,6 @@ img {
 
 .lub-hero__bg {
   background:
-    linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)),
     url("/assets/cacique-lub/hero-bg.jpeg") center/cover no-repeat;
   inset: 0;
   position: absolute;
@@ -1727,8 +1726,8 @@ img {
 
 .lub-hero__overlay {
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 78%) 0%, rgb(0 0 0 / 60%) 45%, rgb(0 0 0 / 35%) 100%),
-    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 25%) 100%);
+    linear-gradient(90deg, rgb(0 0 0 / 65%) 0%, rgb(0 0 0 / 30%) 45%, rgb(0 0 0 / 5%) 100%),
+    linear-gradient(180deg, transparent 0%, rgb(0 0 0 / 15%) 100%);
   inset: 0;
   position: absolute;
   z-index: 1;
