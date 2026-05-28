@@ -20,6 +20,7 @@ const navItems = [
   { href: "/cacique-lub", label: "Cacique Lub" },
   { href: "/tem-conveniencia", label: "Tem Conveniência" },
   { href: "/fidelidade", label: "Fidelidade" },
+  { href: "/postos-cacique", label: "Nossos Postos" },
   { href: "/sobre", label: "Sobre" }
 ];
 
