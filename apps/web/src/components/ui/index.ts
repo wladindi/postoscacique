@@ -1,4 +1,5 @@
 export { AssetSlot } from "./asset-slot";
+export { BrandPromosCarousel } from "./brand-promos-carousel";
 export { Button, ButtonLink } from "./button";
 export { Card } from "./card";
 export { Carousel } from "./carousel";

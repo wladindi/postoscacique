@@ -204,6 +204,51 @@ html {
   font-size: 22px;
 }
 
+/* Mobile carousel */
+.brand-promos__carousel {
+  position: relative;
+  width: 100%;
+}
+
+.brand-promos__viewport {
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-promos__track {
+  display: flex;
+  transition: transform 620ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  width: 100%;
+}
+
+.brand-promos__slide {
+  flex: 0 0 100%;
+  padding: 0 4px;
+}
+
+.brand-promos__dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.brand-promos__dot {
+  background: var(--cacique-gray-300);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  height: 8px;
+  padding: 0;
+  transition: background-color 220ms ease, width 220ms ease;
+  width: 8px;
+}
+
+.brand-promos__dot.is-active {
+  background: var(--cacique-red);
+  width: 28px;
+}
+
 /* ── Hover effects ── */
 
 .network-section__hero {

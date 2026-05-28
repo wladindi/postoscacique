@@ -11,7 +11,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { ButtonLink, Card, Reveal, Section } from "@/components/ui";
+import {
+  BrandPromosCarousel,
+  ButtonLink,
+  Card,
+  Reveal,
+  Section
+} from "@/components/ui";
 import { FleetContactForm } from "@/features/contact/fleet-contact-form";
 
 const fleetBenefits = [
@@ -86,7 +92,7 @@ export default function HomePage() {
         <section className="brand-promos">
           <div className="container">
             <Reveal variant="up">
-              <div className="brand-promos__grid">
+              <BrandPromosCarousel>
                 <Link
                   className="brand-promo brand-promo--tem"
                   href="/tem-conveniencia"
@@ -171,7 +177,7 @@ export default function HomePage() {
                     </span>
                   </div>
                 </Link>
-              </div>
+              </BrandPromosCarousel>
             </Reveal>
           </div>
         </section>
