@@ -713,6 +713,38 @@ img {
   margin-top: 16px;
 }
 
+.site-header__drawer-whats {
+  align-items: center;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgb(37 211 102 / 28%);
+  color: var(--cacique-white);
+  display: inline-flex;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  gap: 10px;
+  justify-content: center;
+  letter-spacing: -0.3px;
+  margin-top: 16px;
+  padding: 14px 18px;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    filter 220ms ease;
+}
+
+.site-header__drawer-whats:hover,
+.site-header__drawer-whats:focus-visible {
+  box-shadow: 0 14px 28px rgb(37 211 102 / 42%);
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+}
+
+.site-header__drawer-whats svg {
+  flex-shrink: 0;
+}
+
 .site-header__backdrop {
   background: rgb(0 0 0 / 45%);
   border: 0;

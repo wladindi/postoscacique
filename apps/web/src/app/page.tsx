@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { FleetContactForm } from "@/features/contact/fleet-contact-form";
 import {
   BrandPromosCarousel,
   ButtonLink,
@@ -18,7 +19,6 @@ import {
   Reveal,
   Section
 } from "@/components/ui";
-import { FleetContactForm } from "@/features/contact/fleet-contact-form";
 
 const fleetBenefits = [
   {
