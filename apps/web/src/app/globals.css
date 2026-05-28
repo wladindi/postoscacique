@@ -2575,7 +2575,7 @@ img {
 
 .about-hero__bg {
   background:
-    url("/assets/home/posto-aereo.webp") center/cover no-repeat;
+    url("/assets/home/posto-aereo.png") center/cover no-repeat;
   inset: 0;
   position: absolute;
   z-index: 0;

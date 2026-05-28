@@ -208,7 +208,7 @@ export default function HomePage() {
                   alt="Foto aérea Posto Cacique"
                   height={397}
                   sizes="(max-width: 980px) 100vw, 600px"
-                  src="/assets/home/posto-aereo.webp"
+                  src="/assets/home/posto-aereo.png"
                   width={600}
                 />
               </div>
